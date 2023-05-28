@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+  <body>
+    <!-- Section Header -->
+    <include src="./partials/common/_header.html"></include>
+    <!-- Section Mobile Menu -->
+    <include src="./partials/common/_mobileMenu.html"></include>
+    <main>
+      <!-- Section Hero -->
+      <include src="./partials/indexPage/_hero.html"></include>
+      <!-- Section Slider -->
+      <include src="./partials/indexPage/_slider.html"></include>
+      <!-- Section Sale -->
+      <include src="./partials/indexPage/_sale.html"></include>
+      <!-- Section Footer -->
+    </main>
+    <include src="./partials/common/_footer.html"></include>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+      });
+    </script>
+
+    <!-- Local Script -->
+    <script src="./index.js"></script>
+  </body>
+</html>
